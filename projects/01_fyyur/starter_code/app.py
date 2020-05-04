@@ -19,7 +19,7 @@ from config import Config
 
 app = Flask(__name__)
 moment = Moment(app)
-app.config.from_object('Config')
+app.config.from_object('config.Config')
 db = SQLAlchemy(app)
 
 # DONE: connect to a local postgresql database
